@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200625173706_InitialMigration.cs" />
+    <Compile Remove="Migrations\20200625173706_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200731175900_ChangeUserToWorker.cs" />
+    <Compile Remove="Migrations\20200731175900_ChangeUserToWorker.Designer.cs" />
+    <Compile Remove="Migrations\20200731180356_ChangeUserToWorker.cs" />
+    <Compile Remove="Migrations\20200731180356_ChangeUserToWorker.Designer.cs" />
+    <Compile Remove="Migrations\20200731194140_CreateManagerEntity.cs" />
+    <Compile Remove="Migrations\20200731194140_CreateManagerEntity.Designer.cs" />
+    <Compile Remove="Migrations\20200731200400_CreateManagerEntity.cs" />
+    <Compile Remove="Migrations\20200731200400_CreateManagerEntity.Designer.cs" />
+    <Compile Remove="Migrations\20200731201603_ChangeNinName.cs" />
+    <Compile Remove="Migrations\20200731201603_ChangeNinName.Designer.cs" />
+    <Compile Remove="Migrations\20200731204006_CreatePpeEntities.cs" />
+    <Compile Remove="Migrations\20200731204006_CreatePpeEntities.Designer.cs" />
+    <Compile Remove="Migrations\20200731211004_CreateRelationalEntities.cs" />
+    <Compile Remove="Migrations\20200731211004_CreateRelationalEntities.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flunt" Version="1.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySqlConnector" Version="0.69.4" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutomakerQuiz.Domain\AutomakerQuiz.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>

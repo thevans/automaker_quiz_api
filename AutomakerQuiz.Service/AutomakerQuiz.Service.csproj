@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flunt" Version="1.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutomakerQuiz.Domain\AutomakerQuiz.Domain.csproj" />
+    <ProjectReference Include="..\AutomakerQuiz.Infra.Data\AutomakerQuiz.Infra.Data.csproj" />
+    <ProjectReference Include="..\Infra.Shared\Infra.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
